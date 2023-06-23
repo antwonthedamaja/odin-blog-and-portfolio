@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/%7Brepo%20here,%20then%20npm%20run%20deploy%7D/static/css/main.c2db5e90.css",
+    "main.js": "/%7Brepo%20here,%20then%20npm%20run%20deploy%7D/static/js/main.edb1f0e8.js",
+    "index.html": "/%7Brepo%20here,%20then%20npm%20run%20deploy%7D/index.html",
+    "main.c2db5e90.css.map": "/%7Brepo%20here,%20then%20npm%20run%20deploy%7D/static/css/main.c2db5e90.css.map",
+    "main.edb1f0e8.js.map": "/%7Brepo%20here,%20then%20npm%20run%20deploy%7D/static/js/main.edb1f0e8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2db5e90.css",
+    "static/js/main.edb1f0e8.js"
+  ]
+}
