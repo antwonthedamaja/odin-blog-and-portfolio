@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -5,9 +8,77 @@
 body {
     padding: 0;
     margin: 0;
+    height: 100vh;
+    font-family: 'Playfair Display', serif;
 }
 
 #root {
-    height: 100vh;
-    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex-grow: 1;
+    background-color: rgba(8,145,178,255);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem 0 1rem;
+}
+
+header > * {
+    z-index: 1;
+}
+
+header::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    border-style: inset;
+    border-color: transparent transparent #ffffff transparent;
+    border-width: 0 0 22vh 100vw;
+}
+
+#pfp {
+    z-index: 1;
+    box-shadow: 0px 0px 3px 2px rgb(78, 76, 76);
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    min-height: 22.5rem;
+    width: 35rem;
+    max-height: 35rem;
+    background-color: white;
+    box-shadow: 2px 2px 4px 1px rgb(192, 189, 189);
+}
+
+main {
+    font-family: 'Roboto', sans-serif;
+    flex-grow: 4;
+    padding: 1rem 12.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 7.5rem;
+    row-gap: 2.5rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+    grid-area: 1 / 1 / 1 / 2;
+}
+
+#placeholder {
+    grid-area: 1 / 2 / 1 / 6;
 }
