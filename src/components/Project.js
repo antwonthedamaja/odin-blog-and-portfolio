@@ -6,8 +6,7 @@ export default function Project(props) {
     const data = props.data;
 
     return <section className='project'>
-        <img srcSet={`${data.imageS[0]} ${data.imageS[1]}, ${data.imageM[0]} ${data.imageM[1]}`}
-        sizes="(max-width: 600px) 95vw, (max-width: 1000px) 20vw, 400px" />
+        <img aria-hidden='true' className='thumbnail' src={data.image} />
         <div className='about-project'>
             <div className='project-header'>
                 <div className='title'>{data.name}</div>
