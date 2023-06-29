@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/antwonthedamaja/odin_personal_portfolio/static/css/main.7296adaa.css",
-    "main.js": "/antwonthedamaja/odin_personal_portfolio/static/js/main.ded119dd.js",
-    "static/media/signup.png": "/antwonthedamaja/odin_personal_portfolio/static/media/signup.d2341acfc723302ad985.png",
-    "static/media/memememory.png": "/antwonthedamaja/odin_personal_portfolio/static/media/memememory.75a528137c252b272c34.png",
-    "static/media/igclone.png": "/antwonthedamaja/odin_personal_portfolio/static/media/igclone.37e9689bd6f5041ce6cb.png",
-    "static/media/library.png": "/antwonthedamaja/odin_personal_portfolio/static/media/library.ce638589087832f740a3.png",
-    "static/media/antwon_footer.jpg": "/antwonthedamaja/odin_personal_portfolio/static/media/antwon_footer.e7d45f347ddc650d90e5.jpg",
-    "static/media/battleships.png": "/antwonthedamaja/odin_personal_portfolio/static/media/battleships.4b898ed6106f7de17409.png",
-    "static/media/antwon-s.webp": "/antwonthedamaja/odin_personal_portfolio/static/media/antwon-s.265ca9b44525a8cfcd58.webp",
-    "static/media/etchasketch.png": "/antwonthedamaja/odin_personal_portfolio/static/media/etchasketch.be0a4f3414695096aa8c.png",
-    "index.html": "/antwonthedamaja/odin_personal_portfolio/index.html",
-    "static/media/open-in-new.svg": "/antwonthedamaja/odin_personal_portfolio/static/media/open-in-new.3ede19ed228086e87d899cfdb6684d58.svg",
-    "main.7296adaa.css.map": "/antwonthedamaja/odin_personal_portfolio/static/css/main.7296adaa.css.map",
-    "main.ded119dd.js.map": "/antwonthedamaja/odin_personal_portfolio/static/js/main.ded119dd.js.map"
+    "main.css": "/odin_personal_portfolio/static/css/main.7296adaa.css",
+    "main.js": "/odin_personal_portfolio/static/js/main.2af2319f.js",
+    "static/media/signup.png": "/odin_personal_portfolio/static/media/signup.d2341acfc723302ad985.png",
+    "static/media/memememory.png": "/odin_personal_portfolio/static/media/memememory.75a528137c252b272c34.png",
+    "static/media/igclone.png": "/odin_personal_portfolio/static/media/igclone.37e9689bd6f5041ce6cb.png",
+    "static/media/library.png": "/odin_personal_portfolio/static/media/library.ce638589087832f740a3.png",
+    "static/media/antwon_footer.jpg": "/odin_personal_portfolio/static/media/antwon_footer.e7d45f347ddc650d90e5.jpg",
+    "static/media/battleships.png": "/odin_personal_portfolio/static/media/battleships.4b898ed6106f7de17409.png",
+    "static/media/antwon-s.webp": "/odin_personal_portfolio/static/media/antwon-s.265ca9b44525a8cfcd58.webp",
+    "static/media/etchasketch.png": "/odin_personal_portfolio/static/media/etchasketch.be0a4f3414695096aa8c.png",
+    "index.html": "/odin_personal_portfolio/index.html",
+    "static/media/open-in-new.svg": "/odin_personal_portfolio/static/media/open-in-new.3ede19ed228086e87d899cfdb6684d58.svg",
+    "main.7296adaa.css.map": "/odin_personal_portfolio/static/css/main.7296adaa.css.map",
+    "main.2af2319f.js.map": "/odin_personal_portfolio/static/js/main.2af2319f.js.map"
   },
   "entrypoints": [
     "static/css/main.7296adaa.css",
-    "static/js/main.ded119dd.js"
+    "static/js/main.2af2319f.js"
   ]
 }
