@@ -1,7 +1,7 @@
 import React from 'react';
 import './style/App.css';
 import data from './data/projects-list';
-import Antwon from './assets/antwon.webp';
+import Antwon from './assets/antwon-s.webp';
 import Project from './components/Project';
 import AntwonFooter from './assets/antwon_footer.jpg';
 
@@ -38,7 +38,7 @@ export default function App() {
                     <a href='https://github.com/antwonthedamaja/' target='_blank' rel="noreferrer">
                         https://github.com/antwonthedamaja/</a>
                 </div>
-                <img aria-hidden='true' src={AntwonFooter} />
+                <img id='footer-pfp' aria-hidden='true' src={AntwonFooter} />
             </footer>
         </>;
 }
