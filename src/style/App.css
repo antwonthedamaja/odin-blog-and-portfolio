@@ -41,7 +41,7 @@ header::after {
 #pfp {
     z-index: 2;
     box-shadow: 0px 0px 3px 2px rgb(78, 76, 76);
-    max-width: 450px;
+    max-width: 25rem;
 }
 
 #about-me {
@@ -89,7 +89,7 @@ h3 {
     display: flex;
     flex-direction: column;
     box-shadow: 0px 2px 4px 1px rgb(192, 189, 189);
-    width: 25vw;
+    max-width: 24vw;
 }
 
 .project:nth-of-type(n+4) {
@@ -129,7 +129,7 @@ footer {
     padding: 3rem 0rem;
     align-items: center;
     justify-content: center;
-    gap: 20vw;
+    gap: 10vw;
     color: white;
     font-size: 1.25rem;
 }
@@ -147,7 +147,7 @@ h4 {
 }
 
 #footer-pfp {
-    max-width: 50vw;
+    max-width: 25vw;
 }
 
 @media (max-width: 1000px) {
@@ -163,7 +163,11 @@ h4 {
 
     #about-me {
         max-width: 55vw;
-        max-height: 50vh;
+        max-height: 100vh;
+    }
+
+    h1, h2, header p {
+        text-align: center;
     }
 
     #about-me > div {
@@ -179,20 +183,20 @@ h4 {
     }
 
     .project {
-        width: 44vw;
-    }
-
-    footer {
-        gap: 3rem;
-        padding: 3rem 3rem;
-    }
-
-    footer > img {
         max-width: 44vw;
     }
 
+    footer {
+        gap: none;
+        padding: 3rem 3rem;
+    }
+
+    #footer-pfp {
+        max-width: 40vw;
+    }
+
     #footer-about {
-        max-width: 39vw;
+        max-width: 35vw;
     }
 }
 
@@ -205,18 +209,30 @@ h4 {
         flex-direction: column;
         justify-content: none;
         align-items: center;
+        padding: 2rem 0 0 0;
     }
 
     #pfp {
         max-width: 85vw;
     }
 
+    header::after {
+        border-radius: unset;
+        clip-path: polygon(100% 0, 0 100%, 100% 100%);
+        background-color: white;
+        width: 400%;
+        height: 150%;
+        bottom: 40%;
+        left: -50%;
+    }
+
     #about-me {
-        bottom: -1rem;
         position: relative;
         box-shadow: none;
         align-items: center;
-        padding: 0 2rem;
+        padding: 0rem 2rem 0;
+        min-width: 100vw;
+        bottom: -2rem;
     }
 
     #about-me > div {
@@ -225,6 +241,10 @@ h4 {
 
     #projects {
         grid-template-columns: auto;
+    }
+
+    .project {
+        max-width: unset;
     }
 
     .project:nth-of-type(n + 2) {
@@ -246,21 +266,21 @@ h4 {
     }
 
     .project, .thumbnail {
-        max-width: 90vw;
+        width: 88vw;
     }
 
     footer {
         flex-direction: column;
         word-break: break-all;
         gap: 5vh;
-        padding: 0 0 3rem 0;
+        padding: 0 0 2rem 0;
     }
 
-    footer img {
-        max-width: 90vw;
+    #footer-pfp {
+        max-width: 85vw;
     }
 
     #footer-about {
-        max-width: 90vw;
+        max-width: 85vw;
     }
 }
