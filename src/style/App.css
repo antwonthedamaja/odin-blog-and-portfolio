@@ -216,16 +216,6 @@ h4 {
         max-width: 85vw;
     }
 
-    header::after {
-        border-radius: unset;
-        clip-path: polygon(100% 0, 0 100%, 100% 100%);
-        background-color: white;
-        width: 400%;
-        height: 150%;
-        bottom: 40%;
-        left: -50%;
-    }
-
     #about-me {
         position: relative;
         box-shadow: none;
