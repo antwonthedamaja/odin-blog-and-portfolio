@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import openIcon from '../assets/open-in-new.svg';
+import openIcon from '../../assets/open-in-new.svg';
 
 export default function Project(props) {
     const data = props.data;

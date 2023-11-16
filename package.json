@@ -1,5 +1,5 @@
 {
-  "name": "odin_personal_portfolio",
+  "name": "odin_blog_and_portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -45,6 +45,5 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-react": "^7.32.2",
     "gh-pages": "^5.0.0"
-  },
-  "homepage": "http://antwonthedamaja.github.io/odin_personal_portfolio"
+  }
 }

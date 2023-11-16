@@ -2,13 +2,13 @@ import React from 'react';
 import './style/App.css';
 import data from './data/projects-list';
 import Antwon from './assets/antwon-s.webp';
-import Project from './components/Project';
+import Project from './components/portfolio/Project';
 import AntwonFooter from './assets/antwon_footer.jpg';
 import { useNavigate } from 'react-router-dom';
 
 export default function Portfolio() {
     const navigate = useNavigate();
-
+    
     return <>
             <header>
                 <img id='pfp' aria-hidden='true' src={Antwon} />
