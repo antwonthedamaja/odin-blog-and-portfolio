@@ -18,6 +18,7 @@
         "react"
     ],
     "rules": {
+        "no-unused-vars": "off",
         "require-jsdoc" : 0,
         "quotes": [2, "single", "avoid-escape"],
         "semi": [2, "always"]
