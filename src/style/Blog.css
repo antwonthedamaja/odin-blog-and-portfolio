@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.blog {
+    color: black;
+    font-family: "Roboto";
+}
+
+.blog-header {
+    display: flex;
+    padding: 1rem 5rem;
+    font-family: "Roboto", sans-serif;
+    border-bottom: 1px solid rgba(70,70,70,.1803921568627451);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-logo {
+    font-size: 2.25rem;
+    text-decoration: none;
+}
+
+.blog-logo:hover {
+    color: black;
+}
+
+.blog-main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-about {
+    flex-grow: 2;
+    background-color: rgba(94, 91, 91, 0.123);
+    border-bottom: 1px solid rgba(70,70,70,.1803921568627451);
+}
+
+.blog-content {
+    flex-grow: 4;
+}
+
+.dropdown > img {
+    max-height: 3rem;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: transform 400ms ease-out;
+}
+
+.dropdown > img:hover {
+    transform: rotate(-90deg);
+}
+
+.dropdown-menu {
+    opacity: 0;
+    pointer-events: none;
+}
