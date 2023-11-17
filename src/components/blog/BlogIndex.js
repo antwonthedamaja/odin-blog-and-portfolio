@@ -20,13 +20,13 @@ export default function Index() {
             <section className='blog-hero'>
                 <div className='blog-hero-text'>
                     <h1>Don&apos;t let your memes be dreams.</h1>
-                    <p>Today&apos;s video is sponsored by Raid Shadow Legends, one of the biggest mobile role-playing games of 2019 and it&apos;s totally free! Currently almost 10 million users have joined Raid over the last six months, and it&apos;s one of the most impressive games in its class with detailed mod</p>
+                    <p>Today&apos;s video is sponsored by Raid Shadow Legends, one of the biggest mobile role-playing games of 2019 and it&apos;s totally free! Currently almost 10 million users have joined Raid over the last six months, and it&apos;s one of the most impressive games in its class with detailed mo</p>
                 </div>
             </section>
             <section className='blog-content'>
-                {blogs.map(blog => {
-                    
-                })}
+                {/* {blogs.map(blog => {
+
+                })} */}
             </section>
         </main>
     );

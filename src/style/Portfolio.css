@@ -162,8 +162,6 @@ h4 {
     max-width: 25vw;
 }
 
-
-
 @media (max-width: 1000px) {
     body {
         position: absolute;
@@ -211,7 +209,7 @@ h4 {
     }
 
     .project {
-        max-width: 44vw;
+        width: 42vw;
     }
 
     footer {
@@ -228,7 +226,7 @@ h4 {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 630px) {
     #projects {
         grid-template-columns: auto;
     }
@@ -260,12 +258,11 @@ h4 {
     }
 
     .project, .thumbnail {
-        width: 88vw;
+        width: 86vw;
     }
 
     footer {
         flex-direction: column;
-        word-break: break-all;
         gap: 5vh;
         padding: 0 0 2rem 0;
     }
