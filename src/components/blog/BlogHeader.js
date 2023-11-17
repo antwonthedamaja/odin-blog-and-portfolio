@@ -9,7 +9,9 @@ export default function BlogHeader() {
         <nav className='dropdown'>
             <img src={settings} />
             <div className='dropdown-menu'>
-                <Link to={'/portfolio'}>Back to portfolio</Link>
+                <Link to={'../portfolio'}>Back to portfolio</Link>
+                <Link to={'/blog/admin-dashboard'}>Admin dashboard</Link>
+                <a href='https://github.com/antwonthedamaja/' rel='noreferrer' target='_blank'>Github</a>
             </div>
         </nav>
     </header>
