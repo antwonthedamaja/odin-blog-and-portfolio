@@ -1,5 +1,5 @@
 import React from 'react';
-import './style/App.css';
+import './style/Portfolio.css';
 import data from './data/projects-list';
 import Antwon from './assets/antwon-s.webp';
 import Project from './components/portfolio/Project';
@@ -8,9 +8,9 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Portfolio() {
     const navigate = useNavigate();
-    
+
     return <>
-            <header>
+            <header className='portfolio-header'>
                 <img id='pfp' aria-hidden='true' src={Antwon} />
                 <section id='about-me'>
                     <h1>Antwon The Damaja</h1>
@@ -21,7 +21,7 @@ export default function Portfolio() {
                     </div>
                 </section>
             </header>
-            <main>
+            <main className='portfolio-main'>
                 <div id='projects'>
                     <h3>My works:</h3>
                     <div aria-hidden='true' id='placeholder'></div>
