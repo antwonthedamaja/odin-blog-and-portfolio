@@ -1,20 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
+    const navigate = useNavigate();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
     async function handleSubmit() {
         try {
-            const response = await fetch('http://localhost:3000/api/login', {
+            await fetch('http://localhost:3000/api/login', {
                 mode: 'cors',
                 method: 'post',
                 headers: {
                     'Content-Type': 'application/json'
                 },
+                credentials: 'include',
                 body: JSON.stringify({ username, password })
             });
-            console.log(response.json());
+            navigate(0);
         } catch (err) {
             console.log(err);
         }

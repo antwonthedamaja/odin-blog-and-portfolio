@@ -14,7 +14,9 @@ export default function Index() {
                 });
                 setBlogs(response.json());
             } catch (err) {
-                console.log(err);
+                if (!err.name === 'AbortError') {
+                    console.log(err);
+                }
             }
         })();
 
