@@ -4,15 +4,21 @@ export default function Index() {
     const [blogs, setBlogs] = useState();
 
     useEffect(() => {
-        
-        async function fetchBlogs() {
-            const response = await fetch('http://localhost:3000/api/', {
-                mode: 'cors'
-            });
-            setBlogs(response.json());
-        }
+        const abortCont = new AbortController();
 
-        fetchBlogs();
+        (async () => {
+            try {
+                const response = await fetch('http://localhost:3000/api/', {
+                    mode: 'cors',
+                    signal: abortCont.signal
+                });
+                setBlogs(response.json());
+            } catch (err) {
+                console.log(err);
+            }
+        })();
+
+        return () => abortCont.abort();
     }, []);
 
     return (

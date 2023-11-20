@@ -1,32 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 export default function Login() {
-    // const [fetching, setFetching] = useState(false);
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-
-    // useEffect(() => {
-    //     async function handleSubmit() {
-    //         try {
-    //             const response = await fetch('http://localhost:3000/api/login', {
-    //                 mode: 'cors',
-    //                 method: 'post',
-    //                 body: JSON.stringify({ username, password })
-    //             });
-    //         } catch (err) {
-    //             console.error(err);
-    //         } finally {
-    //             setFetching(false);
-    //         }
-    //     }
-
-    //     if (!fetching) {
-    //         return;
-    //     }
-
-    //     handleSubmit();
-
-    // }, [fetching]);
 
     async function handleSubmit() {
         try {
@@ -40,7 +16,7 @@ export default function Login() {
             });
             console.log(response.json());
         } catch (err) {
-            console.error(err);
+            console.log(err);
         }
     }
 
