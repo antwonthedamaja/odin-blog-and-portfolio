@@ -32,9 +32,7 @@ export default function Index() {
                 </div>
             </section>
             <section className='blog-content'>
-                {/* {blogs.map(blog => {
 
-                })} */}
             </section>
         </main>
     );

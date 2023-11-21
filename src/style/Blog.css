@@ -87,3 +87,8 @@
     padding: 2rem;
     border: 1px solid black;
 }
+
+.error-text {
+    color: red;
+    
+}
