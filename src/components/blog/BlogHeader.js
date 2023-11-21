@@ -4,8 +4,8 @@ import settings from '../../assets/settings.png';
 
 export default function BlogHeader() {
     return (
-        <header className='blog blog-header'>
-        <strong><Link className='blog blog-logo' to={'/blog'}>Blog</Link></strong>
+        <header className='blog-header'>
+        <strong><Link className='blog-logo anchor-fix' to={'/blog'}>Blog</Link></strong>
         <nav className='dropdown'>
             <img src={settings} />
             <div className='dropdown-menu'>
