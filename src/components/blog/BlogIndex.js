@@ -28,20 +28,22 @@ export default function Index() {
             <section className='blog-hero'>
                 <div className='blog-hero-text'>
                     <h1>Don&apos;t let your memes be dreams.</h1>
-                    <p>Today&apos;s video is sponsored by Raid Shadow Legends, one of the biggest mobile role-playing games of 2019 and it&apos;s totally free! Currently almost 10 million users have joined Raid over the last six months, and it&apos;s one of the most impressive games in its class with detailed mo</p>
+                    <p>Today&apos;s video is sponsored by Raid Shadow Legends, one of the biggest mobile role-playing games of 2019 and it&apos;s totally free!
+                    Currently almost 10 million users have joined Raid over the last six months, 
+                    and it&apos;s one of the most impressive games in its class with detailed mo</p>
                 </div>
             </section>
             <section className='blog-thumbnail-container'>
                 {blogs.map(blog => {
-                    return <a key={blog._id} href={`./${blog._id}`} className='anchor-fix'>
-                        <article className='blog-thumbnail'>
+                    return <article key={blog._id}>
+                        <a href={`blog/${blog._id}`} className='anchor-fix link-wrapper'>
                             <div className='blog-thumbnail-title'>{blog.title}</div>
                             <div>
                                 <div className='blog-thumbnail-date'>{new Date(blog.date).toLocaleDateString()}</div>
                                 <div className='blog-thumbnail-button'>View post</div>
                             </div>
-                        </article>
-                    </a>;
+                        </a>
+                    </article>;
                 })}
             </section>
         </main>

@@ -53,20 +53,20 @@
     padding: 4rem 5rem;
     flex-grow: 15;
     display: grid;
-    grid-template: 350px / 1fr 1fr 1fr 1fr 1fr;
+    grid-template: 350px / auto;
+    grid-auto-columns: auto;
     column-gap: 6rem;
     row-gap: 3rem;
-    place-items: center;
 }
 
-.blog-thumbnail {
+.link-wrapper {
     background-color: white;
     border-radius: 12px;
     box-shadow: 0px 2px 10px 5px rgb(237, 236, 236);
-    width: 240px;
+    box-sizing: content-box;
+    max-width: 240px;
     height: 250px;
     padding: 3rem;
-    box-sizing: content-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
