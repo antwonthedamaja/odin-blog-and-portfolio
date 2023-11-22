@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Index() {
     const [blogs, setBlogs] = useState([]);
@@ -36,13 +37,13 @@ export default function Index() {
             <section className='blog-thumbnail-container'>
                 {blogs.map(blog => {
                     return <article key={blog._id}>
-                        <a href={`blog/${blog._id}`} className='anchor-fix link-wrapper'>
+                        <Link to={`./${blog._id}`} className='anchor-fix blog-thumbnail'>
                             <div className='blog-thumbnail-title'>{blog.title}</div>
-                            <div>
+                            <div className='blog-thumbnail-bottom'>
                                 <div className='blog-thumbnail-date'>{new Date(blog.date).toLocaleDateString()}</div>
                                 <div className='blog-thumbnail-button'>View post</div>
                             </div>
-                        </a>
+                        </Link>
                     </article>;
                 })}
             </section>

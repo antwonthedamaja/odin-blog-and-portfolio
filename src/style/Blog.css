@@ -57,6 +57,15 @@
     font-size: 3.5rem;
 }
 
+.blog-post-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    margin-top: 1.5rem;
+    font-family: "Roboto";
+}
+
 .blog-thumbnail-container {
     padding: 4rem 5rem;
     flex-grow: 15;
@@ -67,19 +76,47 @@
     row-gap: 3rem;
 }
 
-.link-wrapper {
+.blog-thumbnail-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.blog-post-container > h1 {
+    font-size: 1.75rem;
+}
+
+.blog-thumbnail {
     background-color: white;
     border-radius: 12px;
     box-shadow: 0px 2px 10px 5px rgb(237, 236, 236);
     box-sizing: content-box;
     max-width: 240px;
     height: 250px;
-    padding: 3rem;
+    padding: 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
+}
+
+.blog-thumbnail-bottom {
+    width: 100%;
+}
+
+.blog-thumbnail-button {
+    margin-top: .5rem;
+    border-radius: 5px;
+    background-color: rgba(223, 230, 225, 0.855);
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    padding: .5rem;
+    transition: background-color 150ms ease-in-out;
+}
+
+.blog-thumbnail-button:hover {
+    background-color: rgba(223,230,225,.48627450980392156);
 }
 
 .dropdown > img {
@@ -109,6 +146,7 @@
     flex-grow: 1;
     justify-content: center;
     align-items: center;
+    font-family: "Roboto";
 }
 
 .login-box {
@@ -122,5 +160,4 @@
 
 .error-text {
     color: red;
-
 }
