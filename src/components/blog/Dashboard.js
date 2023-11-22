@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Index() {
+    const navigate = useNavigate();
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() => {
@@ -24,11 +25,25 @@ export default function Index() {
         return () => abortCont.abort();
     }, []);
 
+    async function handleLogout(e) {
+        e.preventDefault();
+        try {
+            await fetch('http://localhost:3000/api/logout', {
+                mode: 'cors',
+                credentials: 'include'
+            });
+        } catch (err) {
+            console.log(err);
+        } finally {
+            navigate('..', { relative: 'path' });
+        }
+    }
+
     return (
         <main className='blog-index'>
             <div className='admin-link-container'>
                 <Link to={'./create-post'}>Create post?</Link>
-                <Link to={'./log-out'}>Log out?</Link>
+                <a onClick={handleLogout} href='./logout'>Log out?</a>
             </div>
             <section className='blog-thumbnail-container'>
                 {blogs.map(blog => {
