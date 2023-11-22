@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Login from './Login';
 import Dashboard from './Dashboard';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import CreatePost from './CreatePost';
 
 export default function Admin() {
     const [data, setData] = useState(null);
@@ -27,7 +29,10 @@ export default function Admin() {
     }, []);
 
     if (data?.status === 200) {
-        return <Dashboard />;
+        return <Routes>
+            <Route path='/' element={<Dashboard />} />
+            <Route path='/create-post' element={<CreatePost />} />
+        </Routes>;
     } else if (data) {
         return <Login />;
     }
