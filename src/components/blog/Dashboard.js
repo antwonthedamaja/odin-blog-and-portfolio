@@ -50,8 +50,9 @@ export default function Index() {
                 {blogs.map(blog => {
                     return <article key={blog._id}>
                         <Link to={`./${blog._id}`} className='anchor-fix blog-thumbnail'>
-                            <div className='blog-thumbnail-title'>{blog.title}</div>
+                            <div className='blog-thumbnail-title'>{blog.title.length > 90 ? blog.title.slice(0, 90)+ '...' : blog.title}</div>
                             <div className='blog-thumbnail-bottom'>
+                                <div>Published: {blog.published ? 'Yes' : 'No'}</div>
                                 <div className='blog-thumbnail-date'>{new Date(blog.date).toLocaleDateString()}</div>
                                 <div className='blog-thumbnail-button'>View post</div>
                             </div>
