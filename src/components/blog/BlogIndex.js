@@ -28,10 +28,10 @@ export default function Index() {
         <main className='blog-index'>
             <section className='blog-hero'>
                 <div className='blog-hero-text'>
-                    <h1>Don&apos;t let your memes be dreams.</h1>
-                    <p>Today&apos;s video is sponsored by Raid Shadow Legends, one of the biggest mobile role-playing games of 2019 and it&apos;s totally free!
-                    Currently almost 10 million users have joined Raid over the last six months, 
-                    and it&apos;s one of the most impressive games in its class with detailed mo</p>
+                    <h1>Lorem ipsum dolor sit amet.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dictum lectus eget lacinia aliquam. 
+                        Fusce hendrerit rutrum tellus, sit amet volutpat sapien. Etiam sodales in nibh eget sodales. Integer ac tincidunt tortor. 
+                        Phasellus ac neque mi. Suspendisse sit amet lacus et massa euismod finibus. Aenean ultricies magna sit amet erat condimentum semper.</p>
                 </div>
             </section>
             <section className='blog-thumbnail-container'>
