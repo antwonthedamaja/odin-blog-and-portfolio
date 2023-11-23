@@ -10,9 +10,10 @@ export default function Index() {
 
         (async () => {
             try {
-                const response = await fetch('http://localhost:3000/api/', {
+                const response = await fetch('http://localhost:3000/api/admin', {
                     mode: 'cors',
-                    signal: abortCont.signal
+                    signal: abortCont.signal,
+                    credentials: 'include'
                 });
                 setBlogs(await response.json());
             } catch (err) {
