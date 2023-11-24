@@ -70,7 +70,7 @@
     padding: 4rem 5rem;
     flex-grow: 15;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
     column-gap: 6rem;
     row-gap: 3rem;
     justify-items: center;
@@ -79,6 +79,9 @@
 .blog-thumbnail-title {
     font-size: 1.5rem;
     font-weight: 700;
+    word-break: break-all;
+
+    overflow: hidden;
 }
 
 .blog-post-container > h1 {

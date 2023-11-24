@@ -21,9 +21,11 @@ export default function CreatePost() {
                 body: JSON.stringify({ title, blogBody, published })
             });
             const parsedResponse = await response.json();
-            setErrors(parsedResponse.errors);
+            if (parsedResponse.errors?.length > 0) {
+                setErrors(parsedResponse.errors);
+            }
             if (response.status === 200) {
-                navigate('..');
+                navigate(`../${parsedResponse.newBlog._id}`);
             }
         } catch (err) {
             console.log(err);
