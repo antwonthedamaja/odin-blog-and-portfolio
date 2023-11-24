@@ -1,17 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import Hero from './Hero';
 
-export default function Index() {
+export default function Index({ authed }) {
+    const navigate = useNavigate();
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() => {
         const abortCont = new AbortController();
 
+        const link = authed ? 'http://localhost:3000/api/admin' : 'http://localhost:3000/api/';
+
         (async () => {
             try {
-                const response = await fetch('http://localhost:3000/api/', {
+                const response = await fetch(link, {
                     mode: 'cors',
-                    signal: abortCont.signal
+                    signal: abortCont.signal,
+                    credentials: 'include'
                 });
                 setBlogs(await response.json());
             } catch (err) {
@@ -24,22 +29,33 @@ export default function Index() {
         return () => abortCont.abort();
     }, []);
 
+    async function handleLogout(e) {
+        e.preventDefault();
+        try {
+            await fetch('http://localhost:3000/api/logout', {
+                mode: 'cors',
+                credentials: 'include'
+            });
+        } catch (err) {
+            console.log(err);
+        } finally {
+            navigate('..', { relative: 'path' });
+        }
+    }
+
     return (
         <main className='blog-index'>
-            <section className='blog-hero'>
-                <div className='blog-hero-text'>
-                    <h1>Lorem ipsum dolor sit amet.</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dictum lectus eget lacinia aliquam. 
-                        Fusce hendrerit rutrum tellus, sit amet volutpat sapien. Etiam sodales in nibh eget sodales. Integer ac tincidunt tortor. 
-                        Phasellus ac neque mi. Suspendisse sit amet lacus et massa euismod finibus. Aenean ultricies magna sit amet erat condimentum semper.</p>
-                </div>
-            </section>
+            { authed ? <div className='admin-link-container'>
+                <Link to={'./create-post'}>Create post?</Link>
+                <a onClick={handleLogout} href='./logout'>Log out?</a>
+            </div> : <Hero /> }
             <section className='blog-thumbnail-container'>
                 {blogs.map(blog => {
                     return <article key={blog._id}>
                         <Link to={`./${blog._id}`} className='anchor-fix blog-thumbnail'>
                             <div className='blog-thumbnail-title'>{blog.title}</div>
                             <div className='blog-thumbnail-bottom'>
+                                { authed ? <div>Published: {blog.published ? 'Yes' : 'No'}</div> : null }
                                 <div className='blog-thumbnail-date'>{new Date(blog.date).toLocaleDateString()}</div>
                                 <div className='blog-thumbnail-button'>View post</div>
                             </div>

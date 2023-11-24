@@ -79,8 +79,6 @@
 .blog-thumbnail-title {
     font-size: 1.5rem;
     font-weight: 700;
-    word-break: break-all;
-
     overflow: hidden;
 }
 
