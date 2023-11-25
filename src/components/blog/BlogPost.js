@@ -28,7 +28,7 @@ export default function BlogPost({ authed }) {
     if (blog) {
         return <main className='blog-post-container'>
             <h1>{blog.title}</h1>
-            <p>{blog.comment}</p>
+            <p>{blog.blogBody}</p>
         </main>;
     }
 }
