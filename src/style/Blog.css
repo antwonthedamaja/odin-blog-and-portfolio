@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 .blog-index {
     flex-grow: 1;
@@ -66,8 +67,27 @@
     flex-direction: column;
     flex-grow: 1;
     align-items: center;
-    margin-top: 1.5rem;
-    font-family: "Roboto";
+    margin: 1.5rem 10vw;
+    font-family: "Poppins", sans-serif;
+}
+
+.blog-post-container > h1 {
+    font-size: 1.75rem;
+}
+
+.comment-container {
+    flex-grow: 1;
+    width: 100%;
+    margin: 2rem 7.5vw;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-comment-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .blog-thumbnail-container {
@@ -78,16 +98,13 @@
     column-gap: 6rem;
     row-gap: 3rem;
     justify-items: center;
+    font-family: "Poppins", sans-serif;
 }
 
 .blog-thumbnail-title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 700;
     overflow: hidden;
-}
-
-.blog-post-container > h1 {
-    font-size: 1.75rem;
 }
 
 .blog-thumbnail {

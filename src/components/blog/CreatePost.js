@@ -20,12 +20,13 @@ export default function CreatePost() {
                 },
                 body: JSON.stringify({ title, blogBody, published })
             });
-            const parsedResponse = await response.json();
-            if (parsedResponse.errors?.length > 0) {
-                setErrors(parsedResponse.errors);
-            }
+            const parsed = await response.json();
             if (response.status === 200) {
-                navigate(`../${parsedResponse.newBlog._id}`);
+                navigate(`../${parsed.newBlog._id}`);
+            } else {
+                if (parsed.errors?.length > 0) {
+                    setErrors(parsed.errors);
+                }
             }
         } catch (err) {
             console.log(err);
