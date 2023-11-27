@@ -75,21 +75,6 @@
     font-size: 1.75rem;
 }
 
-.comment-container {
-    flex-grow: 1;
-    width: 100%;
-    margin: 2rem 7.5vw;
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-    align-items: center;
-}
-
-.post-comment-container {
-    display: flex;
-    flex-direction: column;
-}
-
 .blog-thumbnail-container {
     padding: 4rem 5rem;
     flex-grow: 15;
@@ -181,4 +166,32 @@
 
 .error-text {
     color: red;
+}
+
+.comment-container {
+    flex-grow: 1;
+    width: 50%;
+    padding: 2rem 0;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comment-box {
+    min-width: 15rem;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-comment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-comment-form > *:last-child {
+    margin-top: 1rem;
 }

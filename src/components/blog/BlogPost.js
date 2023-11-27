@@ -67,12 +67,15 @@ export default function BlogPost({ authed }) {
             <div className='comment-container'>
                 <strong>Comments:</strong>
                 {comments.map(comment => {
-                    return <div key={comment._id}>
-                        <div>{comment.username}</div>
+                    return <div key={comment._id} className='comment-box'>
+                        <div className='comment-header'>
+                            <p>{comment.username}</p>
+                            <p>{new Date(comment.date).toLocaleDateString()}</p>
+                        </div>
                         <div>{comment.comment}</div>
                     </div>;
                 })}
-                <form className='post-comment-container'>
+                <form className='post-comment-form'>
                     <label htmlFor='author'>Author:</label>
                     <input type='text' onChange={e => setCommentAuthor(e.target.value)} placeholder='Optional, max characters: 15' />
                     <label htmlFor='comment'>Comment:</label>
