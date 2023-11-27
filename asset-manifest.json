@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/odin_personal_portfolio/static/css/main.59410a8b.css",
-    "main.js": "/odin_personal_portfolio/static/js/main.3710c9b5.js",
-    "static/media/antwon_footer.jpg": "/odin_personal_portfolio/static/media/antwon_footer.e7d45f347ddc650d90e5.jpg",
-    "static/media/signup_l.png": "/odin_personal_portfolio/static/media/signup_l.5d8f5423f0f6ec616081.png",
-    "static/media/antwon-s.webp": "/odin_personal_portfolio/static/media/antwon-s.265ca9b44525a8cfcd58.webp",
-    "static/media/memememory_l.png": "/odin_personal_portfolio/static/media/memememory_l.3b90582ad4d6257d495e.png",
-    "static/media/igclone_l.png": "/odin_personal_portfolio/static/media/igclone_l.b593478520df8ca78d1a.png",
-    "static/media/battleships_l.png": "/odin_personal_portfolio/static/media/battleships_l.57fc48508db58d239085.png",
-    "index.html": "/odin_personal_portfolio/index.html",
-    "static/media/open-in-new.svg": "/odin_personal_portfolio/static/media/open-in-new.3ede19ed228086e87d899cfdb6684d58.svg",
-    "main.59410a8b.css.map": "/odin_personal_portfolio/static/css/main.59410a8b.css.map",
-    "main.3710c9b5.js.map": "/odin_personal_portfolio/static/js/main.3710c9b5.js.map"
+    "main.css": "/static/css/main.91940b2f.css",
+    "main.js": "/static/js/main.2619c054.js",
+    "static/media/antwon_footer.jpg": "/static/media/antwon_footer.e7d45f347ddc650d90e5.jpg",
+    "static/media/signup_l.png": "/static/media/signup_l.5d8f5423f0f6ec616081.png",
+    "static/media/antwon-s.webp": "/static/media/antwon-s.265ca9b44525a8cfcd58.webp",
+    "static/media/igclone_l.png": "/static/media/igclone_l.d860b3c9b5c4df501f17.png",
+    "static/media/memememory_l.png": "/static/media/memememory_l.3b90582ad4d6257d495e.png",
+    "static/media/settings.png": "/static/media/settings.d5557485285c25dbe405.png",
+    "static/media/battleships_l.png": "/static/media/battleships_l.57fc48508db58d239085.png",
+    "index.html": "/index.html",
+    "static/media/open-in-new.svg": "/static/media/open-in-new.3ede19ed228086e87d899cfdb6684d58.svg",
+    "main.91940b2f.css.map": "/static/css/main.91940b2f.css.map",
+    "main.2619c054.js.map": "/static/js/main.2619c054.js.map"
   },
   "entrypoints": [
-    "static/css/main.59410a8b.css",
-    "static/js/main.3710c9b5.js"
+    "static/css/main.91940b2f.css",
+    "static/js/main.2619c054.js"
   ]
 }
