@@ -1,7 +1,7 @@
 # odin-blog-and-portfolio
 Odin Project personal portfolio and blog frontend.
 
-# live-link
+# Live link
 https://antwonthedamaja.github.io/odin-blog-and-portfolio/
 
 # API codebase
