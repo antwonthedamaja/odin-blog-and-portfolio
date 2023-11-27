@@ -189,6 +189,7 @@
 .post-comment-form {
     display: flex;
     flex-direction: column;
+    min-width: 20rem;
 }
 
 .post-comment-form > *:last-child {
@@ -208,8 +209,13 @@
     border-radius: 5px;
     padding: .25rem;
     width: 7.5rem;
+    margin-top: .25rem;
 }
 
 .delete-button:hover {
     background-color: rgb(202, 36, 36);
+}
+
+.extra-m {
+    margin: 2rem auto;
 }

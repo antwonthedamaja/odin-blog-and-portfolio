@@ -34,8 +34,25 @@ export default function EditPost() {
             console.log(err);
         }
     }
+
+    async function handleDelete() {
+        try {
+            await fetch(`http://localhost:3000/api/blog/${state._id}`, {
+                mode: 'cors',
+                method: 'delete',
+                credentials: 'include',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            navigate('..');
+        } catch (err) {
+            console.log(err);
+        }
+    }
     
     return <main className='blog-post-container'>
+        <button type='button' className='delete-button extra-m' onClick={handleDelete}>Delete blog post?</button>
         <label htmlFor='title'>Title:</label>
         <input name='title' id='title' placeholder='Title' type='text' value={title} onChange={e => setTitle(e.target.value)}/>
         <label htmlFor='body'>Body:</label>

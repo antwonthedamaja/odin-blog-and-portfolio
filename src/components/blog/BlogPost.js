@@ -79,7 +79,7 @@ export default function BlogPost({ authed }) {
     if (blog) {
         return <main className='blog-post-container'>
             { authed ? <div className='blog-link-container'>
-                <Link to='./edit' state={ blog }>Edit post?</Link>
+                <Link to='./edit' state={ blog }>Edit/delete post?</Link>
             </div> : null }
             <h1>{blog.title}</h1>
             <p>{blog.blogBody}</p>
