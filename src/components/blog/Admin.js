@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import CreatePost from './CreatePost';
 import BlogPost from './BlogPost';
 import BlogIndex from './BlogIndex';
+import EditPost from './EditPost';
 
 export default function Admin() {
     const [data, setData] = useState(null);
@@ -33,6 +34,7 @@ export default function Admin() {
         return <Routes>
             <Route path='/' element={<BlogIndex authed={true} />} />
             <Route path='/:id' element={<BlogPost authed={true} />} />
+            <Route path='/:id/edit' element={<EditPost />} />
             <Route path='/create-post' element={<CreatePost />} />
         </Routes>;
     } else if (data) {

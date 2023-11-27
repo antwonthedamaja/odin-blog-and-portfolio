@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 
 export default function BlogPost({ authed }) {
     const [blog, setBlog] = useState();
@@ -47,7 +47,7 @@ export default function BlogPost({ authed }) {
                     date: new Date()
                 })
             });
-            if (response.status === 200) {
+            if (response.status === 200 || response.status === 403) {
                 navigate(0);
             } else {
                 const parsed = await response.json();
@@ -62,6 +62,9 @@ export default function BlogPost({ authed }) {
 
     if (blog) {
         return <main className='blog-post-container'>
+            { authed ? <div className='blog-link-container'>
+                <Link to='./edit' state={ blog }>Edit post?</Link>
+            </div> : null }
             <h1>{blog.title}</h1>
             <p>{blog.blogBody}</p>
             <div className='comment-container'>
