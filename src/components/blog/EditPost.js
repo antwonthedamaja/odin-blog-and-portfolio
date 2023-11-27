@@ -37,11 +37,11 @@ export default function EditPost() {
     
     return <main className='blog-post-container'>
         <label htmlFor='title'>Title:</label>
-        <input name='title' placeholder='Title' type='text' value={title} onChange={e => setTitle(e.target.value)}/>
+        <input name='title' id='title' placeholder='Title' type='text' value={title} onChange={e => setTitle(e.target.value)}/>
         <label htmlFor='body'>Body:</label>
-        <textarea name='body' placeholder='Blog body' value={blogBody} onChange={e => setBlogBody(e.target.value)} />
+        <textarea name='body' id='body' placeholder='Blog body' value={blogBody} onChange={e => setBlogBody(e.target.value)} />
         <label htmlFor='published'>Published?</label>
-        <input type='checkbox' name='published' defaultChecked={published} onClick={() => setPublished(!published)} />
+        <input type='checkbox' id='published' name='published' defaultChecked={published} onClick={() => setPublished(!published)} />
         <button type='button' onClick={handleSubmit}>Submit blog post</button>
         {errors.map(error => {
             return <div key={error.msg} className='error-text'>{error.msg}</div>;

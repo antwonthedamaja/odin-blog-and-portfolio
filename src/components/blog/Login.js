@@ -34,9 +34,9 @@ export default function Login() {
             <div className='login-box'>
                 <h1>Sign in to admin dashboard</h1>
                 <label htmlFor='username'>Enter Username</label>
-                <input type='text' name='username' placeholder='Username' onChange={e => setUsername(e.target.value)} />
+                <input type='text' id='username' name='username' placeholder='Username' onChange={e => setUsername(e.target.value)} />
                 <label htmlFor='password'>Enter Password</label>
-                <input type='password' name='password' placeholder='Password' onChange={e => setPassword(e.target.value)} />
+                <input type='password' id='password' name='password' placeholder='Password' onChange={e => setPassword(e.target.value)} />
                 <button type='button' onClick={handleSubmit}>Sign in</button>
                 <div className='error-text'>{error}</div>
             </div>
