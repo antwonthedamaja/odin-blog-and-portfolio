@@ -9,7 +9,6 @@ export default function App() {
             <Routes>
                 <Route path='/portfolio' element={<Portfolio />} />
                 <Route path='/blog/*' element={<BlogRouter />} />
-                <Route path='*' element={<Navigate to='/' />} />
                 <Route index element={<Navigate to="/portfolio" />} />
             </Routes>
         </HashRouter>
