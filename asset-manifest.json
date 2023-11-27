@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/odin-blog-and-portfolio/static/css/main.91940b2f.css",
-    "main.js": "/odin-blog-and-portfolio/static/js/main.ffe78409.js",
+    "main.js": "/odin-blog-and-portfolio/static/js/main.6b272a09.js",
     "static/media/antwon_footer.jpg": "/odin-blog-and-portfolio/static/media/antwon_footer.e7d45f347ddc650d90e5.jpg",
     "static/media/signup_l.png": "/odin-blog-and-portfolio/static/media/signup_l.5d8f5423f0f6ec616081.png",
     "static/media/antwon-s.webp": "/odin-blog-and-portfolio/static/media/antwon-s.265ca9b44525a8cfcd58.webp",
@@ -12,10 +12,10 @@
     "index.html": "/odin-blog-and-portfolio/index.html",
     "static/media/open-in-new.svg": "/odin-blog-and-portfolio/static/media/open-in-new.3ede19ed228086e87d899cfdb6684d58.svg",
     "main.91940b2f.css.map": "/odin-blog-and-portfolio/static/css/main.91940b2f.css.map",
-    "main.ffe78409.js.map": "/odin-blog-and-portfolio/static/js/main.ffe78409.js.map"
+    "main.6b272a09.js.map": "/odin-blog-and-portfolio/static/js/main.6b272a09.js.map"
   },
   "entrypoints": [
     "static/css/main.91940b2f.css",
-    "static/js/main.ffe78409.js"
+    "static/js/main.6b272a09.js"
   ]
 }
