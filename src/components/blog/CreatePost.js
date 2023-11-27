@@ -10,7 +10,7 @@ export default function CreatePost() {
 
     async function handleSubmit() {
         try {
-            const response = await fetch('http://localhost:3000/api/blog', {
+            const response = await fetch('https://top-blog-api.fly.dev/api/blog', {
                 mode: 'cors',
                 method: 'post',
                 credentials: 'include',

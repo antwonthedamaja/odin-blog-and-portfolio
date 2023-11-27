@@ -11,7 +11,7 @@ export default function EditPost() {
 
     async function handleSubmit() {
         try {
-            const response = await fetch(`http://localhost:3000/api/blog/${state._id}`, {
+            const response = await fetch(`https://top-blog-api.fly.dev/api/blog/${state._id}`, {
                 mode: 'cors',
                 method: 'put',
                 credentials: 'include',
@@ -37,7 +37,7 @@ export default function EditPost() {
 
     async function handleDelete() {
         try {
-            await fetch(`http://localhost:3000/api/blog/${state._id}`, {
+            await fetch(`https://top-blog-api.fly.dev/api/blog/${state._id}`, {
                 mode: 'cors',
                 method: 'delete',
                 credentials: 'include',

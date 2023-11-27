@@ -14,7 +14,7 @@ export default function Admin() {
 
         (async () => {
             try {
-                const response = await fetch('http://localhost:3000/api/verify-user', {
+                const response = await fetch('https://top-blog-api.fly.dev/api/verify-user', {
                     mode: 'cors',
                     signal: abortCont.signal,
                     credentials: 'include'

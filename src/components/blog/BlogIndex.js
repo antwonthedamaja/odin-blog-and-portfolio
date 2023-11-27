@@ -9,7 +9,7 @@ export default function Index({ authed }) {
     useEffect(() => {
         const abortCont = new AbortController();
 
-        const link = authed ? 'http://localhost:3000/api/admin' : 'http://localhost:3000/api/';
+        const link = authed ? 'https://top-blog-api.fly.dev/api/admin' : 'https://top-blog-api.fly.dev/api/';
 
         (async () => {
             try {
@@ -35,7 +35,7 @@ export default function Index({ authed }) {
     async function handleLogout(e) {
         e.preventDefault();
         try {
-            await fetch('http://localhost:3000/api/logout', {
+            await fetch('https://top-blog-api.fly.dev/api/logout', {
                 mode: 'cors',
                 credentials: 'include'
             });

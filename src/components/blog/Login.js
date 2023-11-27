@@ -9,7 +9,7 @@ export default function Login() {
 
     async function handleSubmit() {
         try {
-            const response = await fetch('http://localhost:3000/api/login', {
+            const response = await fetch('https://top-blog-api.fly.dev/api/login', {
                 mode: 'cors',
                 method: 'post',
                 headers: {

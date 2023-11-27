@@ -15,7 +15,7 @@ export default function BlogPost({ authed }) {
 
         (async () => {
             try {
-                const response = await fetch(`http://localhost:3000/api/blog/${idParams.id}`, {
+                const response = await fetch(`https://top-blog-api.fly.dev/api/blog/${idParams.id}`, {
                     mode: 'cors',
                     signal: abortCont.signal
                 });
@@ -34,7 +34,7 @@ export default function BlogPost({ authed }) {
 
     async function handleCommentSubmit() {
         try {
-            const response = await fetch(`http://localhost:3000/api/blog/${idParams.id}/comment`, {
+            const response = await fetch(`https://top-blog-api.fly.dev/api/blog/${idParams.id}/comment`, {
                 mode: 'cors',
                 method: 'post',
                 headers: {
@@ -62,7 +62,7 @@ export default function BlogPost({ authed }) {
 
     async function handleCommentDelete(commentId) {
         try {
-            await fetch(`http://localhost:3000/api/blog/${idParams.id}/comment/${commentId}`, {
+            await fetch(`https://top-blog-api.fly.dev/api/blog/${idParams.id}/comment/${commentId}`, {
                 mode: 'cors',
                 method: 'delete',
                 credentials: 'include',
