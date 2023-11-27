@@ -8,7 +8,6 @@ export default function CreatePost() {
     const [errors, setErrors] = useState([]);
     const navigate = useNavigate();
 
-
     async function handleSubmit() {
         try {
             const response = await fetch('http://localhost:3000/api/blog', {
@@ -23,6 +22,8 @@ export default function CreatePost() {
             const parsed = await response.json();
             if (response.status === 200) {
                 navigate(`../${parsed.newBlog._id}`);
+            } else if (response.status === 403) {
+                navigate(0);
             } else {
                 if (parsed.errors?.length > 0) {
                     setErrors(parsed.errors);

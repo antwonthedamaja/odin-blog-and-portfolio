@@ -18,7 +18,10 @@ export default function Index({ authed }) {
                     signal: abortCont.signal,
                     credentials: 'include'
                 });
-                setBlogs(await response.json());
+                const parsed = await response.json();
+                if (parsed.length > 0) {
+                    setBlogs(parsed);
+                }
             } catch (err) {
                 if (!err.name === 'AbortError') {
                     console.log(err);
