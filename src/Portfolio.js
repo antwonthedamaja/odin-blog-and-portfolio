@@ -4,17 +4,15 @@ import data from './data/projects-list';
 import Antwon from './assets/antwon-s.webp';
 import Project from './components/portfolio/Project';
 import AntwonFooter from './assets/antwon_footer.jpg';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Portfolio() {
-    const navigate = useNavigate();
-
     return <>
             <header className='portfolio-header'>
                 <img id='pfp' aria-hidden='true' src={Antwon} />
                 <section id='about-me'>
                     <h1>Antwon The Damaja</h1>
-                    <a href='' onClick={() => navigate('/blog', { replace: true })}><strong>Click here to go to my blog!</strong></a>
+                    <Link to='/blog'><strong>Click here to go to my blog!</strong></Link>
                     <div>
                         <h2>About Me:</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
