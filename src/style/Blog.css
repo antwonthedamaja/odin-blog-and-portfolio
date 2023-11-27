@@ -76,10 +76,10 @@
 }
 
 .blog-thumbnail-container {
-    padding: 4rem 5rem;
+    padding: 4rem 2.5vw;
     flex-grow: 15;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     column-gap: 6rem;
     row-gap: 3rem;
     justify-items: center;
@@ -104,6 +104,7 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    max-width: 100vw;
 }
 
 .blog-thumbnail-bottom {
@@ -206,7 +207,7 @@
 .post-comment-form {
     display: flex;
     flex-direction: column;
-    min-width: 20rem;
+    min-width: 15rem;
 }
 
 .post-comment-form > *:last-child {
