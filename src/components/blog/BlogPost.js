@@ -60,6 +60,22 @@ export default function BlogPost({ authed }) {
         }
     }
 
+    async function handleCommentDelete(commentId) {
+        try {
+            await fetch(`http://localhost:3000/api/blog/${idParams.id}/comment/${commentId}`, {
+                mode: 'cors',
+                method: 'delete',
+                credentials: 'include',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            navigate(0);
+        } catch (err) {
+            console.log(err);
+        }
+    }
+
     if (blog) {
         return <main className='blog-post-container'>
             { authed ? <div className='blog-link-container'>
@@ -76,13 +92,14 @@ export default function BlogPost({ authed }) {
                             <p>{new Date(comment.date).toLocaleDateString()}</p>
                         </div>
                         <div>{comment.comment}</div>
+                        { authed ? <button onClick={() => handleCommentDelete(comment._id)} className='delete-button'>Delete post</button> : null }
                     </div>;
                 })}
                 <form className='post-comment-form'>
                     <label htmlFor='author'>Author:</label>
-                    <input type='text' onChange={e => setCommentAuthor(e.target.value)} placeholder='Optional, max characters: 15' />
+                    <input type='text' id='author' onChange={e => setCommentAuthor(e.target.value)} placeholder='Optional, max characters: 15' />
                     <label htmlFor='comment'>Comment:</label>
-                    <input type='text' onChange={e => setCommentText(e.target.value)} placeholder='Required, max characters: 1000' />
+                    <input type='text' id='comment' onChange={e => setCommentText(e.target.value)} placeholder='Required, max characters: 1000' />
                     <button type='button' onClick={handleCommentSubmit}>Submit comment</button>
                 </form>
                 <ul>
