@@ -193,5 +193,10 @@
 }
 
 .post-comment-form > *:last-child {
-    margin-top: 1rem;
+    margin-top: .5rem;
+}
+
+.blog-link-container {
+    margin-top: 2rem;
+    font-size: 2rem;
 }
