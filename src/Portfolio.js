@@ -11,7 +11,7 @@ export default function Portfolio() {
             <header className='portfolio-header'>
                 <img id='pfp' aria-hidden='true' src={Antwon} />
                 <section id='about-me'>
-                    <h1>Antwon The Damaja</h1>
+                    <h1>Tony Issa</h1>
                     <Link to='/blog'><strong>Click here to go to my blog!</strong></Link>
                     <div>
                         <h2>About Me:</h2>
@@ -38,8 +38,8 @@ export default function Portfolio() {
                     </div>
                     <div>Phone number: 21</div>
                     <div>Email address: iamtrashman@gmail.com</div>
-                    <a href='https://github.com/antwonthedamaja/' target='_blank' rel="noreferrer">
-                        https://github.com/antwonthedamaja/</a>
+                    <a href='https://github.com/tonyissa/' target='_blank' rel="noreferrer">
+                        https://github.com/tonyissa/</a>
                 </div>
                 <img id='footer-pfp' aria-hidden='true' src={AntwonFooter} />
             </footer>
