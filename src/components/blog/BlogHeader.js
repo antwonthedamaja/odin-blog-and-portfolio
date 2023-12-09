@@ -10,7 +10,7 @@ export default function BlogHeader() {
             <div className='dropdown-menu'>
                 <Link to={'../portfolio'}>Back to portfolio</Link>
                 <Link to={'./admin'}>Admin dashboard</Link>
-                <a href='https://github.com/antwonthedamaja/' rel='noreferrer' target='_blank'>Github</a>
+                <a href='https://github.com/tonyissa/' rel='noreferrer' target='_blank'>Github</a>
             </div>
         </nav>
     </header>;
